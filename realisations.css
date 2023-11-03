@@ -1,0 +1,105 @@
+/* Styles pour le header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 4em;
+    background: url(images/bgbox3.png);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#headerlinkdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.headerlinks {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1em;
+}
+
+#headersearchdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+input {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+/* Styles pour le corps de la page */
+body {
+    background: url("images/bgbox.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Styles pour la mosaïque d'images */
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 4em;
+}
+
+.mosaique {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.realisation {
+    border: 0px solid #ccc;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.realisation img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    width: 157px;
+    height: 157px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 90px;
+    align-items: center;
+    background: url(images/bgbox3.png);
+    background-color: rgb(249, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 4em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Réinitialisation des marges par défaut */
+* {
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="contact.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Petals - Contact</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerlinkdiv">
+            <a class="headerlinks" href="index.html">Home</a>
+            <a class="headerlinks" href="entreprise.html">Entreprise</a>
+            <a class="headerlinks" href="realisations.html">Réalisations</a>
+            <a class="headerlinks" href="contact.html">Contact</a>
+        </div>
+        <div id="headersearchdiv">
+            <input type="text" placeholder="Recherche...">
+        </div>
+    </header>
+    <div class="contactnous">
+        <h1>Contactez-nous</h1>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <label for="civility">Civilité :</label>
+            <select id="civility" name="civility">
+                <option value="M.">M.</option>
+                <option value="Mme">Mme</option>
+            </select>
+
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Adresse postale :</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="privacy-policy">Accepter la politique de confidentialité :</label>
+            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+<footer></footer>
+
+</html>

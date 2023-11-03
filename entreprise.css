@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(249, 0, 0);
+    z-index: 99;
     font-family: Arial, Helvetica, sans-serif;
     height: 4em;
     background: url(images/bgbox3.png);
@@ -61,9 +62,9 @@ body {
 
 /* Style des containers des employés */
 .employee-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* Style des employés */
@@ -76,12 +77,14 @@ body {
 
 /* Style des images d'employés */
 .employee img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s, opacity 0.3s; /* Ajoutez opacity ici */
-    opacity: 1; /* Par défaut, l'image est visible */
+    transition: transform 0.3s, opacity 0.3s;
+    /* Ajoutez opacity ici */
+    opacity: 1;
+    /* Par défaut, l'image est visible */
 }
 
 /* Style du nom de l'employé */
@@ -102,9 +105,10 @@ body {
 .employee p {
     opacity: 0;
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
@@ -112,6 +116,7 @@ body {
     border-radius: 5px;
     transition: opacity 0.3s;
 }
+
 
 /* Effet de survol sur les images des employés */
 .employee:hover img {
@@ -140,13 +145,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     margin-top: 220px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Style du footer */
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

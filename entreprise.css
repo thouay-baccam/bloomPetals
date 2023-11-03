@@ -80,7 +80,8 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s; /* Ajoutez opacity ici */
+    opacity: 1; /* Par défaut, l'image est visible */
 }
 
 /* Style du nom de l'employé */
@@ -117,6 +118,7 @@ body {
     transform: scale(1.1);
 }
 
+
 /* Affichage des descriptions des employés au survol */
 .employee:hover p {
     opacity: 1;
@@ -142,7 +144,8 @@ body {
 
 /* Style du footer */
 footer {
-    position: relative;
+    position: absolute;
+    left: 0;
     bottom: 0;
     display: flex;
     flex-direction: row;
